@@ -50,8 +50,6 @@ namespace ConsoleApplication1
             DateTime end = DateTime.Now;
             TimeSpan recTime = end - start;
             Console.WriteLine("time {0}, sum {1}", recTime, sum);
-           
-
             Console.ReadLine();
         }
     }
