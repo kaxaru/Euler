@@ -1,0 +1,1 @@
+this repository contain my decision tasks "Project Euler" // ProjectEuler.net

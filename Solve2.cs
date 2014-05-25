@@ -7,16 +7,16 @@ namespace ConsoleApplication1
 {
     class Program
     {
+        public const int value = 4000000;
+ 
         static void Main(string[] args)
-        {
-            int abc = 4000000;
+        {         
             int[] array = new int[2] { 1, 2 };
-            while (array[array.Length - 1] < abc)
+            while (array[array.Length - 1] < value)
             {
                 Array.Resize(ref array, array.Length + 1);
                 Push(array);
-            }
-
+            }        
             Console.WriteLine("This sum {0}", Even_valArray(array));
             Console.ReadKey();
         }
@@ -32,7 +32,7 @@ namespace ConsoleApplication1
             int sum = 0;
             for (int i = 0; i < a.Length; i++)
             {
-                if ((a[i] % 2 == 0) && (a[i] < 4000000) && (i != 0))
+                if ((a[i] % 2 == 0) && (a[i] < value) && (i != 0))
                 {
                     sum += a[i];
                 }
